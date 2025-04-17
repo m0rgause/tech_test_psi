@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "3ca407a1-e024-4f12-a31c-fcd03e3bfd85",
+		"name": "Tech Test PSI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14474250"
+	},
+	"item": [
+		{
+			"name": "Soal 1",
+			"item": [
+				{
+					"name": "Add Voucher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"code\": \"VOUCHER50\",\r\n  \"discountPercentage\": 50,\r\n  \"pointsPercentage\": 2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/voucher",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"voucher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checkout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"productPrice\": 5000000,\r\n  \"voucherCode\": \"VOUCHER50\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/checkout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"checkout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "googleCode",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
