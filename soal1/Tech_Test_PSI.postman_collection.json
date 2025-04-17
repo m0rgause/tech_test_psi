@@ -64,6 +64,45 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Soal 3",
+			"item": [
+				{
+					"name": "Seeding",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/seed",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"seed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User With Company",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users-with-company",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users-with-company"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
