@@ -1,0 +1,27 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Voucher {
+  id                 Int    @id @default(autoincrement())
+  code               String
+  discountPercentage Int
+  pointsPercentage   Int
+
+  Transaction Transaction[]
+}
+
+model Transaction {
+  id            Int     @id @default(autoincrement())
+  productPrice  Float
+  discount      Float
+  finalPrice    Float
+  pointsAwarded Int
+  voucherId     Int
+  voucher       Voucher @relation(fields: [voucherId], references: [id])
+}
