@@ -56,3 +56,33 @@
     ```bash
     npm run dev
     ```
+
+# Soal 4
+<!-- backend dan frontend -->
+## How To Use
+1. Install the required packages
+    ```bash
+    cd backend
+    npm install
+
+    cd ../frontend
+    npm install
+    ```
+2. Run the backend
+    ```bash
+    cd backend
+    ```
+    ```bash
+    npm run start:dev
+    ```
+3. Run the frontend
+    ```bash
+    cd frontend
+    ```
+    ```bash
+    npm run dev
+    ```
+
+4. Open your browser and go to `http://localhost:3000` for the frontend and `http://localhost:1000` for the backend.
+
+

@@ -103,6 +103,30 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Soal 4",
+			"item": [
+				{
+					"name": "Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
