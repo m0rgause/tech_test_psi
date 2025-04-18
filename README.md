@@ -85,4 +85,18 @@
 
 4. Open your browser and go to `http://localhost:3000` for the frontend and `http://localhost:1000` for the backend.
 
+# Soal 5
+## How To Use
+1. Install the required packages
+    ```bash
+    npm install
+    ```
+2. init typescript project
+    ```bash
+    npx tsc --init
+    ```
+3. Run the script
+    ```bash
+    npx ts-node soal5.ts
+    ```
 
